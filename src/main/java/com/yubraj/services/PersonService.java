@@ -10,7 +10,11 @@ import java.util.List;
  */
 public class PersonService {
 
-    List<Person> personList = new ArrayList<Person>();
+    List<Person> personList;
+
+    public PersonService() {
+        this.personList = new ArrayList<Person>();
+    }
 
     public void addPerson(Person person){
         personList.add(person);
